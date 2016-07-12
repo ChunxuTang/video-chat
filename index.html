@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+  <script src="./js/vex.combined.min.js"></script>
+  <script>vex.defaultOptions.className = 'vex-theme-plain';</script>
+  <link rel="stylesheet" href="./css/vex.css" />
+  <link rel="stylesheet" href="./css/vex-theme-plain.css" />
+
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><span style="margin-left: 10px">Video Chat</span></a>
+    </div>
+  </nav>
+
+  <div class="row" style="margin-left: 10px;">
+    <div class="row" style="margin-top: 30px; margin-bottom: 20px">
+      <span style="margin-right: 5px">
+        <a id="start-call" class="btn waves-effect waves-teal blue lighten-1" href="#">Start Chat</a>
+      </span>
+      <span>
+        <a id="join-call" class="btn waves-effect waves-light pink lighten-2">Join Chat</a>
+      </span>
+    </div>
+
+    <div class="row" style="height: 320px;">
+      <p id="room-name"></p>
+
+      <div class="videos">
+        <video class="video local-video" id="local-video" width="200" height="150" draggable="true" autoplay muted></video>
+        <video class="video" id="remote-video" width="640"  autoplay></video>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script src="js/video-chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
