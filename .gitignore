@@ -1,0 +1,53 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+*.py[cod]
+*.pyc
+
+pids
+logs
+results
+tmp
+
+# Editors
+.idea
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# SQLite databases
+*.sqlite
+
+# Virtual environment
+venv
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Installer logs
+pip-log.txt
+
+# Packages
+*.egg
+*.egg-info
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+node_modules
