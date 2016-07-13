@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>Video Chat</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-  <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/vex.combined.min.js"></script>
   <script>vex.defaultOptions.className = 'vex-theme-plain';</script>
   <link rel="stylesheet" href="./css/vex.css" />
@@ -34,12 +34,12 @@
       </span>
     </div>
 
-    <div class="row" style="height: 320px;">
+    <div class="row">
       <p id="room-name"></p>
 
       <div class="videos">
         <video class="video local-video" id="local-video" width="200" height="150" draggable="true" autoplay muted></video>
-        <video class="video" id="remote-video" width="640"  autoplay></video>
+        <video class="video" id="remote-video" width="640" height="480" autoplay></video>
       </div>
     </div>
   </div>
