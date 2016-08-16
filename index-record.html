@@ -25,25 +25,34 @@
   </div>
 </nav>
 
-<div class="row" style="margin-left: 10px;">
-  <div class="row" style="margin-top: 30px; margin-bottom: 20px">
-    <span style="margin-right: 5px">
-      <a id="record" class="btn waves-effect waves-teal blue lighten-1" href="#">Record</a>
-    </span>
-    <span style="margin-right: 5px">
-      <a id="play" class="btn waves-effect waves-light pink lighten-2">Play</a>
-    </span>
-    <span>
-      <a id="download" class="btn waves-effect waves-light pink lighten-2">Download</a>
-    </span>
-  </div>
+<!--<div class="row" style="margin-left: 10px;">-->
+  <!--<div class="row" style="margin-top: 30px; margin-bottom: 20px">-->
+    <!--<span style="margin-right: 5px">-->
+      <!--<a id="record" class="btn waves-effect waves-teal blue lighten-1" href="#">Record</a>-->
+    <!--</span>-->
+    <!--<span style="margin-right: 5px">-->
+      <!--<a id="play" class="btn waves-effect waves-light pink lighten-2">Play</a>-->
+    <!--</span>-->
+    <!--<span>-->
+      <!--<a id="download" class="btn waves-effect waves-light pink lighten-2">Download</a>-->
+    <!--</span>-->
+  <!--</div>-->
 
-  <div class="row">
-    <div class="videos">
-      <video class="video" id="user-video" autoplay muted></video>
-      <video class="video" id="recorded-video" autoplay></video>
-    </div>
-  </div>
+  <!--<div class="row">-->
+    <!--<div class="videos">-->
+      <!--<video class="video" id="user-video" autoplay muted></video>-->
+      <!--<video class="video" id="recorded-video" autoplay></video>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<video id="gum" autoplay muted></video>
+<video id="recorded" autoplay loop></video>
+
+<div>
+  <button id="record">Start Recording</button>
+  <button id="play" disabled>Play</button>
+  <button id="download" disabled>Download</button>
 </div>
 
 <script src="js/adapter.js"></script>
