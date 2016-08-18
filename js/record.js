@@ -32,11 +32,11 @@ downloadButton.onclick = download;
 // window.isSecureContext could be used for Chrome
 var isSecureOrigin = location.protocol === 'https:' ||
     location.host === 'localhost';
-if (!isSecureOrigin) {
-  alert('getUserMedia() must be run from a secure origin: HTTPS or localhost.' +
-      '\n\nChanging protocol to HTTPS');
-  location.protocol = 'HTTPS';
-}
+// if (!isSecureOrigin) {
+//   alert('getUserMedia() must be run from a secure origin: HTTPS or localhost.' +
+//       '\n\nChanging protocol to HTTPS');
+//   location.protocol = 'HTTPS';
+// }
 
 // Use old-style gUM to avoid requirement to enable the
 // Enable experimental Web Platform features flag in Chrome 49
